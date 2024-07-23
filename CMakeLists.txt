@@ -28,5 +28,7 @@ set(XZ_SOURCES
 # TODO: look into what would be needed for plain old lzma
 
 add_library(xz-embedded STATIC ${XZ_SOURCES})
+target_include_directories(xz-embedded PUBLIC include)
+
 add_executable(xzminidec xzminidec.c)
 target_link_libraries(xzminidec xz-embedded)
