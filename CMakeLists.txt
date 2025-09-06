@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.18.1)
 project(xz-embedded)
 
 option(XZ_BUILD_BCJ "Build xz-embedded with BCJ support (native binary optimization)" OFF)
